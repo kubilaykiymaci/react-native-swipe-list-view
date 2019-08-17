@@ -1,6 +1,6 @@
 [![npm](https://img.shields.io/npm/v/react-native-swipe-list-view.svg)](https://www.npmjs.com/package/react-native-swipe-list-view) [![npm](https://img.shields.io/npm/dm/react-native-swipe-list-view.svg)](https://www.npmjs.com/package/react-native-swipe-list-view)
 
-# react-native-swipe-list-view
+# react-native-swipe-list-view  with flow type, eslint and prettier entegration and some bugfix
 ****
 --------
 
