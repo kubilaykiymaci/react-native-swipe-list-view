@@ -1,0 +1,21 @@
+# /node_modules/* and /bower_components/* ignored by default
+
+# Ignore built files except build/index.js
+.nyc_output/**
+.storybook/**
+.history/
+assets/**
+build/**
+coverage/**
+documents/**
+mocks/**
+modules/**
+prototypes/**
+stories/**
+tools/**
+server.js
+**/test/**
+**/tests/**
+**/package/**
+**/node_modules/**
+**/rsa.js

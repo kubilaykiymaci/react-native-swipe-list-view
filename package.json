@@ -6,7 +6,12 @@
   "description": "A ListView with rows that swipe open and closed.",
   "scripts": {
     "start": "node_modules/react-native/packager/packager.sh",
-    "dev": "node bin/dev.js && cd SwipeListExample && npm run start"
+    "dev": "node bin/dev.js && cd SwipeListExample && npm run start",
+    "lint": "esw ./components",
+    "lint-without-warnings": "esw ./components --quiet=true",
+    "lint-fix": "esw --fix ./components",
+    "lint-watch": "esw --watch ./components",
+    "flow": "flow"
   },
   "repository": {
     "type": "git",
@@ -24,13 +29,32 @@
     "swipe",
     "swipeable"
   ],
-  "peerDependencies": {
-    "prop-types": ">=15.5.0",
-    "react": ">=0.14.8",
-    "react-native": ">=0.23.1"
+  "dependencies": {
+    "react": "16.5.2",
+    "react-native": "0.59.10"
   },
   "devDependencies": {
+    "@babel/core": "^7.5.5",
     "@types/react": "^16.8.20",
-    "@types/react-native": "^0.57.63"
+    "@types/react-native": "^0.57.63",
+    "babel-eslint": "^10.0.2",
+    "babel-plugin-module-resolver": "^3.2.0",
+    "eslint": "^6.1.0",
+    "eslint-config-standard": "^13.0.1",
+    "eslint-import-resolver-babel-module": "^5.1.0",
+    "eslint-plugin-eslint-comments": "^3.1.2",
+    "eslint-plugin-flowtype": "^3.13.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^22.15.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-native": "^3.7.0",
+    "eslint-watch": "^6.0.0",
+    "flow-bin": "^0.105.2",
+    "flow-remove-types": "^2.105.2",
+    "prettier": "1.18.2"
   }
 }
